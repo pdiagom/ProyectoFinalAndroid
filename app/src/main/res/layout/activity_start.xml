@@ -12,12 +12,14 @@
         android:layout_height="46dp"
         android:fontFamily="sans-serif-black"
         android:text="¡Bienvenido a DEMAR!"
+        android:textAlignment="center"
         android:textColor="#03A9F4"
         android:textSize="24sp"
         android:typeface="sans"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.775" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
