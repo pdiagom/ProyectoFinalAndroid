@@ -34,7 +34,11 @@ public class LoginActivity extends AppCompatActivity {
         btnSignIn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                String emailIngresado = etEmail.getText().toString().trim();
+
+                // Pasar el email a ShopActivity
                 Intent intent = new Intent(LoginActivity.this, ShopActivity.class);
+                intent.putExtra("USER_EMAIL", emailIngresado);
                 startActivity(intent);
             }
         });
@@ -49,3 +53,4 @@ public class LoginActivity extends AppCompatActivity {
         });
     }
 }
+

@@ -21,25 +21,24 @@
         android:layout_height="wrap_content"
         android:hint="Nombre de usuario"
         android:padding="10dp"
-        android:background="@android:drawable/editbox_background"/>
+        android:inputType="textPersonName" />
 
     <EditText
         android:id="@+id/etEmail"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Correo electrónico"
-        android:padding="10dp"
+        android:hint="ejemplo@ejemplo.com"
         android:inputType="textEmailAddress"
-        android:background="@android:drawable/editbox_background"/>
+        android:padding="10dp" />
 
     <EditText
         android:id="@+id/etPassword"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Contraseña"
-        android:padding="10dp"
         android:inputType="textPassword"
-        android:background="@android:drawable/editbox_background"/>
+        android:padding="10dp" />
+
 
     <Button
         android:id="@+id/btnRegister"

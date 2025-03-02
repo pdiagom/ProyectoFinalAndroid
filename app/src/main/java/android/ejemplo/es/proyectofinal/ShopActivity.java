@@ -22,6 +22,9 @@ public class ShopActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_shop);
 
+        // Obtener el email desde el Intent
+        String userEmail = getIntent().getStringExtra("USER_EMAIL");
+
         // Obtener el ImageView por su ID
         ImageView userIcon = findViewById(R.id.user_icon);
 
@@ -29,11 +32,15 @@ public class ShopActivity extends AppCompatActivity {
         userIcon.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                // Crear un Intent para iniciar la actividad de usuario
+                // Crear un Intent para iniciar la actividad de perfil
                 Intent intent = new Intent(ShopActivity.this, ProfileActivity.class);
-                startActivity(intent);  // Iniciar la actividad
+
+                // Pasar el email al perfil
+                intent.putExtra("USER_EMAIL", userEmail);
+                startActivity(intent);
             }
         });
+
 
         // Configurar el RecyclerView
         RecyclerView recyclerView = findViewById(R.id.products_recycler);
