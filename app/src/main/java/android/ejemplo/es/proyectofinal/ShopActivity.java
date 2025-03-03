@@ -24,7 +24,7 @@ public class ShopActivity extends AppCompatActivity {
 
         // Obtener el email desde el Intent
         String userEmail = getIntent().getStringExtra("USER_EMAIL");
-
+        String userName = getIntent().getStringExtra("USERNAME");
         // Obtener el ImageView por su ID
         ImageView userIcon = findViewById(R.id.user_icon);
 
@@ -37,6 +37,7 @@ public class ShopActivity extends AppCompatActivity {
 
                 // Pasar el email al perfil
                 intent.putExtra("USER_EMAIL", userEmail);
+                intent.putExtra("USERNAME", userName);
                 startActivity(intent);
             }
         });

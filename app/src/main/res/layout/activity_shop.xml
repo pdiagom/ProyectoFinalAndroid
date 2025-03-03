@@ -56,7 +56,6 @@
         app:layout_constraintStart_toEndOf="@id/menu_icon"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <!-- Título "Popular" -->
     <TextView
         android:id="@+id/popular_title"
         android:layout_width="wrap_content"
@@ -67,7 +66,8 @@
         android:textColor="@android:color/black"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/search_bar"
-        android:layout_marginTop="16dp"/>
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/roboto"/>
 
     <!-- Icono de vista de lista/cuadrícula -->
     <ImageView
@@ -114,7 +114,8 @@
             android:orientation="vertical"
             android:gravity="center"
             android:padding="8dp"
-            android:layout_marginEnd="20dp">
+            android:layout_marginEnd="20dp"
+            android:fontFamily="@font/roboto">
 
             <ImageView
                 android:layout_width="24dp"
@@ -138,7 +139,8 @@
             android:orientation="vertical"
             android:gravity="center"
             android:padding="8dp"
-            android:layout_marginEnd="20dp">
+            android:layout_marginEnd="20dp"
+            android:fontFamily="@font/roboto">
 
             <ImageView
                 android:layout_width="24dp"
@@ -162,7 +164,8 @@
             android:orientation="vertical"
             android:gravity="center"
             android:padding="8dp"
-            android:layout_marginEnd="20dp">
+            android:layout_marginEnd="20dp"
+            android:fontFamily="@font/roboto">
 
             <ImageView
                 android:layout_width="24dp"
@@ -185,7 +188,8 @@
             android:layout_height="wrap_content"
             android:orientation="vertical"
             android:gravity="center"
-            android:padding="8dp">
+            android:padding="8dp"
+            android:fontFamily="@font/roboto">
 
             <ImageView
                 android:layout_width="24dp"

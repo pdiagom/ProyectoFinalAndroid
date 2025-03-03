@@ -6,7 +6,8 @@
     android:padding="8dp"
     android:layout_margin="8dp"
     android:gravity="center"
-    android:background="#FFFFFF">
+    android:background="#FFFFFF"
+    android:fontFamily="@font/roboto">
 
     <!-- Imagen del producto -->
     <ImageView
